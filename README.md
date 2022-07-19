@@ -60,14 +60,23 @@ developing your own process.
 
 ## Your Notes Here
 
+-First step I took was checking what routes were implemented in the routes.rb file (index, create, update)
+- I added destroy because I knew we would need it later to delete from the db
+- Refactored the find_toy method
+
+
 - Add a new toy when the toy form is submitted
 
   - How I debugged:
+    - Noticed name error in terminal (server) uninitialized constant Toys. Updated to the singular Toy to match model name.
+
 
 - Update the number of likes for a toy
 
   - How I debugged:
+    - included json to be returned by the server upon a successful request
 
 - Donate a toy to Goodwill (and delete it from our database)
 
   - How I debugged:
+    - this was fixed earlier when I added the destroy route
